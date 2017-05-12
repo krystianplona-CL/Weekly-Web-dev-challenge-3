@@ -1,0 +1,39 @@
+@mixin desk{
+  @media (min-width: 600px){
+    @content;
+  }
+}
+
+//grid
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  padding: 0.5rem;
+}
+
+
+.row:before,
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@for $i from 1 through 12{
+  .col-#{$i}{
+    width: 100%;
+    float: left;
+    min-height: 1px;
+    @media (min-width: 600px){
+      float: none;
+      width: (100% / 12) * $i;
+    }
+  }
+}
