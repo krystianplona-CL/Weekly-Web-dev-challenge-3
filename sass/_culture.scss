@@ -1,1 +1,73 @@
+#culture{
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 2.5rem 0.5rem;
+  .culture-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desk{
+      max-width: 80%;
+      padding-top: 5.625rem;
+      padding-bottom: 5.625rem;
+    };
+    h1{
+      font-size: 1.875rem;
+      text-transform: uppercase;
+      color: #222;
+      @include desk{
+        font-size: 2.5rem;
+        font-size: 20px;
+      };
+    }
+    p{
+      margin-bottom: 3.125rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 1rem;
+    }
+    .row{
+      .col-4{
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include desk{
+          padding-left: 4rem;
+          padding-right: 4rem;
+        };
+        div{
+          border: 2px solid #777;
+          width: 5.3rem;
+          height: 5.3rem;
+          border-radius: 50%;
+          margin-bottom: 1rem;
+          background-repeat: no-repeat;
+          background-size: 60%;
+          background-position: center center;
 
+        }
+        .icon1{
+          background-image: url("../img/3_icon_work.png");
+        }
+        .icon2{
+          background-image: url("../img/3_icon_quality.png");
+        }
+        .icon3{
+          background-image: url("../img/3_icon_deliver.png");
+        }
+        h4{
+          text-transform: uppercase;
+          color: #222;
+          line-height: 2.5rem;
+          @include desk{
+            line-height: 1.1rem;
+          };
+        }
+      }
+    }
+  }
+}
