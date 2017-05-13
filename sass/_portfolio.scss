@@ -1,0 +1,173 @@
+#portfolio{
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+  padding-bottom: 17rem;
+  background-image: url("../img/phone.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 15.5rem;
+  background-position: bottom right;
+  @include desk{
+    padding-top: 5.5rem;
+    padding-bottom: 9.5rem;
+    background-size: 50%;
+    background-position: top 360px right;
+  };
+  .portfolio-container{
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desk{
+      max-width: 80%;
+      align-items: flex-start;
+    };
+    h1{
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      font-weight: 700;
+      font-size: 1.875rem;
+      line-height: 2.5rem;
+      @include desk{
+        font-size: 2.5rem;
+
+      };
+    }
+    p{
+      padding-top: 1rem;
+      padding-bottom: 2.5rem;
+      color: #777;
+      font-family: "RobotoSlab", cursive;
+      text-align: center;
+      @include desk{
+        font-size: 1.5rem;
+        margin-bottom: 5rem;
+        text-align: left;
+      };
+    }
+    .p{
+      @include desk{
+        max-width: 50%;
+        font-size: 1.3rem;
+        margin-bottom: 0;
+        padding-bottom: 2rem;
+      };
+    }
+    .port{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include desk{
+        align-items: flex-start;
+        width: 50%;
+        align-self: flex-start;
+      };
+      h3{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding-bottom: 1rem;
+        @include desk{
+          text-align: left;
+          font-size: 1.2rem;
+        };
+      }
+      p{
+        text-align: center;
+        @include desk{
+          text-align: left;
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+        };
+      }
+      div{
+        text-align: center;
+        @include desk{
+          text-align: left;
+          padding-left: 5.3rem;
+        };
+        h4{
+          padding-top: 5rem;
+          font-size: 1rem;
+          @include desk{
+            padding-top: 1.5rem;
+          };
+        }
+        p{
+          padding-left:0.5rem;
+          padding-right:0.5rem;
+          @include desk{
+            padding: 0;
+            font-size: 1.2rem;
+          };
+        }
+      }
+      .port-div1{
+        background-image: url("../img/2_icon_e_commerance.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        @include desk{
+          background-position: center left;
+        };
+      }
+      .port-div2{
+        background-image: url("../img/2_icon_seo.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        @include desk{
+          background-position: center left;
+        };
+      }
+      .port-div3{
+        background-image: url("../img/2_icon_secure.png");
+        background-position: top center;
+        background-repeat: no-repeat;
+        @include desk{
+          background-position: center left;
+        };
+      }
+    }
+    a{
+      display: block;
+      color: #7cc576;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      .arrow{
+        height: 1.2rem;
+        width: 2rem;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 1rem;
+        transition: all ease 1s;
+        .moving-arrow{
+          display: flex;
+          align-items: center;
+          position: relative;
+        }
+        .line{
+          width:1rem;
+          height: 2px;
+          background-color: #7cc576;
+
+        }
+        .arr{
+          width:0.5rem;
+          height: 0.5rem;
+          border-top: 2px solid #7cc576;
+          border-right: 2px solid #7cc576;
+          transform: rotate(45deg);
+          position: absolute;
+          left: 0.5rem;
+        }
+      }
+      .arrow:hover{
+        padding-left: 1rem;
+      }
+    }
+  }
+}

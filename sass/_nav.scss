@@ -4,6 +4,13 @@
   position: fixed;
   background-color: white;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  .nav-container{
+    @include desk{
+      max-width: 80%;
+    };
+  }
   nav{
     display: flex;
     justify-content: space-between;

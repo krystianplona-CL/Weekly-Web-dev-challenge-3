@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){
     $.scrollTo(0);
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
-      if(scroll >= 1){
+      if(scroll <= 1){
         $(".nav").addClass("extended_menu");
       }
       else{

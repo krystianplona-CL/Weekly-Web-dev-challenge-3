@@ -29,11 +29,11 @@
 @for $i from 1 through 12{
   .col-#{$i}{
     width: 100%;
-    float: left;
+    float: none;
     min-height: 1px;
-    @media (min-width: 600px){
-      float: none;
+    @include desk{
+      float: left;
       width: (100% / 12) * $i;
-    }
+    };
   }
 }

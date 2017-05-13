@@ -1,0 +1,53 @@
+#about{
+  display: flex;
+  justify-content: center;
+  .about-container{
+    padding: 0 1rem;
+    width: 90vw;
+    color: #222;
+    @include desk{
+      padding-top: 5.625rem;
+    
+    };
+  }
+  h2{
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    line-height: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    @include desk{
+      font-size: 2.5rem;
+    };
+  }
+  p{
+    margin-bottom: 3.125rem;
+    margin-top: 0.925rem;
+    color: #777;
+    text-align: center;
+    font-family: "RobotoSlab", cursive;
+    @include desk{
+      margin-bottom: 5rem;
+      font-size: 1.4rem;
+    };
+  }
+  article{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4{
+      text-transform: uppercase;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      letter-spacing: 0;
+      margin-top: 2rem;
+    }
+    p{
+      font-size: 0.95rem;
+      margin-top: 1rem;
+    }
+  }
+}
