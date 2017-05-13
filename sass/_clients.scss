@@ -1,0 +1,90 @@
+#clients{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 2.5rem 0.5rem;
+  .clients-container{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2rem;
+      color: #333;
+      @include desk{
+        font-size: 2.5rem;
+      };
+    }
+    p{
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 1rem;
+      font-family: "RobotoSlab", cursive;
+      line-height: 1.333rem;
+      @include desk{
+        font-size: 1.4rem;
+        padding-bottom: 3rem;
+      };
+    }
+    .row{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include desk{
+        flex-direction: row;
+        padding-bottom: 3rem;
+      };
+    }
+    .client1{
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      background-image: url("../img/client_1.png");
+      background-size: contain;
+      width: 10rem;
+      height: 10rem;
+      background-repeat: no-repeat;
+      @include desk{
+        width: 15rem;
+        height: 15rem;
+        margin-right: 3rem;
+      };
+    }
+    .client2{
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      background-image: url("../img/client_2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 10rem;
+      height: 10rem;
+      @include desk{
+        width: 15rem;
+        height: 15rem;
+        margin-left: 3rem;
+        order: 2;
+      };
+    }
+    .text{
+      background-color: #f9f9f9;
+      padding: 1rem 0.2rem;
+      text-align: center;
+      @include desk{
+        padding: 4rem 2rem;
+        order: 1;
+      };
+      p{
+        margin:0;
+        padding:0;
+        line-height: 1.3rem;
+      }
+      .green-text{
+        padding-top: 1rem;
+        color: #7cc576;
+      }
+    }
+  }
+}
