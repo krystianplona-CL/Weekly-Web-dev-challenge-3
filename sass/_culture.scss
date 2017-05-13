@@ -9,8 +9,7 @@
     align-items: center;
     @include desk{
       max-width: 80%;
-      padding-top: 5.625rem;
-      padding-bottom: 5.625rem;
+      padding-top: 3rem;
     };
     h1{
       font-size: 1.875rem;
@@ -18,7 +17,6 @@
       color: #222;
       @include desk{
         font-size: 2.5rem;
-        font-size: 20px;
       };
     }
     p{
@@ -26,6 +24,11 @@
       font-size: 0.9rem;
       color: #777;
       margin-top: 1rem;
+      font-family: "RobotoSlab", cursive;
+      line-height: 1.333rem;
+      @include desk{
+        font-size: 1.4rem;
+      };
     }
     .row{
       .col-4{
@@ -65,6 +68,11 @@
           line-height: 2.5rem;
           @include desk{
             line-height: 1.1rem;
+          };
+        }
+        p{
+          @include desk{
+            font-size: 1rem;
           };
         }
       }
