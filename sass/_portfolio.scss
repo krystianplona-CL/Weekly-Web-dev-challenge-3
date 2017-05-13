@@ -31,7 +31,7 @@
       line-height: 2.5rem;
       @include desk{
         font-size: 2.5rem;
-
+        align-self: center;
       };
     }
     p{
@@ -44,6 +44,7 @@
         font-size: 1.5rem;
         margin-bottom: 5rem;
         text-align: left;
+        align-self: center;
       };
     }
     .p{
