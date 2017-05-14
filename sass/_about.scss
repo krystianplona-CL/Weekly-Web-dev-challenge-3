@@ -7,7 +7,7 @@
     color: #222;
     @include desk{
       padding-top: 5.625rem;
-    
+
     };
   }
   h2{
@@ -27,7 +27,7 @@
     margin-top: 0.925rem;
     color: #777;
     text-align: center;
-    font-family: "RobotoSlab", cursive;
+    font-family: 'Roboto Slab', serif;
     @include desk{
       margin-bottom: 5rem;
       font-size: 1.4rem;
