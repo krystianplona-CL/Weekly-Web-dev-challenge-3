@@ -42,7 +42,7 @@
       text-align: center;
       @include desk{
         font-size: 1.5rem;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
         text-align: left;
         align-self: center;
       };
@@ -53,6 +53,8 @@
         font-size: 1.3rem;
         margin-bottom: 0;
         padding-bottom: 2rem;
+        text-align: left;
+        align-self: flex-start;
       };
     }
     .port{

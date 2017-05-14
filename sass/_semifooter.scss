@@ -1,0 +1,53 @@
+#semi-footer{
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  color: white;
+  .semi-footer-container{
+    max-width: 80%;
+    .row{
+      .latest-post{
+        @include desk{
+          padding-left: 3rem;
+        };
+      }
+      .contact-us, .latest-post, .latest-tweets{
+        h2{
+          text-transform: uppercase;
+          text-align: center;
+          margin-bottom: 1.5rem;
+          margin-top: 2rem;
+          font-size: 1.1rem;
+          @include desk{
+            text-align: left;
+            margin-bottom: 2rem;
+          };
+        }
+        .location, .cellphone, .email, .text-post, .picture-post, .play-post, .twitt{
+          display:flex;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          align-items: center;
+          img{
+            margin-right: 1rem;
+            align-self: flex-start;
+          }
+          p{
+            font-family: "RobotoSlab", cursive;
+          }
+          .hash{
+            margin-top: 0.5rem;
+          }
+        }
+      }
+      .latest-post, .latest-tweets{
+        .hover:hover{
+          color: #7cc576;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

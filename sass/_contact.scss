@@ -1,0 +1,45 @@
+#contact{
+  display: flex;
+  justify-content: center;
+  background-color: #7cc576;
+  color: white;
+  .contact-container{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    padding-bottom: 2.5rem;
+    @include desk{
+      font-size: 2.5rem;
+    };
+  }
+  .fake-link{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 10rem;
+    height: 3rem;
+    line-height: calc(3rem - 4px);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all ease 1s;
+    @include desk{
+      border: 3px solid white;
+      width: 13rem;
+      height: 3.5rem;
+      line-height: calc(3.5rem - 6px);
+    }
+  }
+  .fake-link:hover{
+    background-color: white;
+    color: #7cc576;
+    cursor: pointer
+  }
+  }
+}

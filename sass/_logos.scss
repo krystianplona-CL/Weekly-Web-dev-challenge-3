@@ -1,0 +1,19 @@
+#logos{
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .logos-container{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include desk{
+      flex-direction: row;
+      justify-content: space-between;
+    };
+    img{
+      padding: 1rem;
+    }
+  }
+}
