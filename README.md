@@ -1,1 +1,1 @@
-GitHub Pages: https://krystianplona-CL.github.io/Weekly-Web-dev-challenge-3/
+GitHub Pages: https://krystianplona.github.io/Weekly-Web-dev-challenge-3/
